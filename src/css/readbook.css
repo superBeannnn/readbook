@@ -1,0 +1,566 @@
+.readbook{
+  c: #51A7CB;
+  bg: #A4E2EE;
+  width: 100vw;
+  h: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  font-family: Helvetica,sans-serif;
+  h2{
+      fw: 800
+  }
+  .readbook-module{
+      m: 0 .52rem;
+  }
+  .readbook-wing{
+      position: relative;
+      &:before{
+          bg: url("~images/readbook/wing.png") no-repeat;
+          background-size: 100% auto;
+          w: 5.88rem;
+          h: 5.34rem;
+          content: '';
+          position: absolute;
+          right: -.56rem;
+          top: -.75rem
+      }
+  }
+  .readbook-card-module{
+      bg: #fff;       
+      box-shadow: 0px 6px 10px 0px rgba(9, 50, 125, 0.35), 0px 2px 0px 0px rgba(255,247,243,1);
+      bdrs: 5px;
+      overflow: hidden;
+      position: relative;
+  }
+  .readbook-content{
+      position: absolute;
+      w: 100%;
+      top: 145vw;
+  }
+  .readbook-module-title{
+      m: 0 auto .8rem;
+      background-size: 100% auto;
+      position: relative;
+      &:before{
+          content: '';
+          d: block;
+          position: absolute;
+          w: 1.66rem;
+          h: 1.3rem;
+          top: -.6rem;
+          bg: url("~images/readbook/bubble.png") no-repeat;
+          background-size: 100% auto;
+      }
+  }
+  .readbook-title2{
+      background-image: url("~images/readbook/module-title2.png");
+      w: 8.62rem;
+      h: 1.32rem;
+      &:before{
+          left: -1rem
+      }
+  }
+  .readbook-title3{
+      background-image: url("~images/readbook/module-title3.png");
+      w: 5.18rem;
+      h: 2.46rem;
+      &:before{
+          left: -1rem
+      }
+  }
+  .readbook-title4{
+      background-image: url("~images/readbook/module-title4.png");
+      w: 9.96rem;
+      h: 2.46rem;
+      &:before{
+          left: 1.2rem
+      }
+  }
+  .readbook-title5{
+      w: 5.18rem;
+      h: 2.46rem;
+      &:before{
+          left: -1rem
+      }
+  }
+  .readbook-welfare{
+      p: .76rem 0;
+      bg: linear-gradient( 180deg, rgba(255,255,255,1) , rgba(164,226,238,1) 45.73vw);
+      border-radius: 5px;
+      mb: 1rem;
+      .readbook-welfare-title{
+          bg: url("~images/readbook/module-title1.png") no-repeat ;
+          background-size: 100% auto;
+          w: 64.266667vw;
+          h: 22vw;
+          m: 0 auto .5rem;
+      }
+  }
+  .readbook-teacher{
+      mb: 1.3rem;
+      .readbook-teacher-list{
+          overflow: hidden;
+          /* p: .52rem; */
+          w: 13.28rem;
+          m: .52rem auto 0;
+          &:after{
+              content: '';
+              w: 0%;
+              clear: both;
+              d: inline-block;
+          }
+          .teacher-card{
+              mb: .6rem;
+              position: relative;
+              &:nth-child(4n + 1){
+                  &:after{
+                      w: 12.96rem;
+                      content: '';
+                      background-image: url('~images/readbook/line.png');
+                      h: 1px;
+                      background-size: 100% 100%;
+                      position: absolute;
+                      left: 0;
+                      bottom: -.1rem;
+                  }
+              }
+          }
+      }
+  }
+  .readbook-lesson-recomm {
+      mb: 1rem;
+      &:before{
+          top: .6rem
+      }
+  }
+  .readbook-lesson-package{
+      mb: .4rem;
+      &:before{
+          top: .6rem
+      }
+      .swiper-slide{
+          &:after{
+              content: '';
+              clear: both;
+              display: block;
+          }
+      }
+
+  }
+  .readbook-lesson-list{
+      position: relative;
+      .readbook-lesson-bannner{
+          bg: url("~images/readbook/banner2.png") no-repeat ;
+          w: 100vw;
+          h: 60vw;
+          background-size: 100% 100%;
+      }
+      .lesson-card{
+          mb: .4rem;
+
+      }
+  }
+  .readbook-lesson-audio{
+      p: .6rem 0;
+      mb: 1rem;
+  }
+  .readbook-lesson-module1{
+      .readbook-lesson-audio{
+          bg: linear-gradient(180deg,rgba(255,217,196,1),rgba(164,226,238,1));
+  
+      }
+  }
+  
+  .swiper-container{
+      pb: 1.3rem;
+      pt: .2rem;
+  }
+  .readbook-bullet{
+      w: 1.4rem;
+      h: .36rem;
+      bg:#77CADA;
+      bdrs: .4rem;
+      display: inline-block;
+      m: 0 4px;
+      transform: scale(1);
+      transition: all .2s;
+  }
+  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{
+      bg: #51A7CB;
+      transform: scale(1);
+      
+  }
+  .readbook-teacher-text{
+      c: #FF8740;
+      fz: .48rem;
+      w: 12.96rem;
+      m: auto;
+      mb: .9rem;
+      position: relative;
+  }
+  .readbook-lesson-list-more{
+      bg: #52a7cb;
+      transition: all .2s;
+      w: 4.28rem;
+      h: 1.2rem;
+      c: #fff;
+      lh: 1.2rem;
+      ta: center;
+      bd: 2px #fff solid;
+      bdrs: 2rem;
+      m: auto;
+      mt: 1rem;
+      &:before, &:after{
+          content: '-------------------------------';
+          position: absolute;
+          c: #51A7CB;
+          w: 3.8rem;
+          fw: 100;
+          fz: .8rem;
+          overflow: hidden;
+          white-space: nowrap;
+      }
+      &:before{
+          left: 0
+      }
+      &:after{
+          right: 0
+      }
+      &:active{
+          bg: #40829e
+      }
+  }
+  .readbook-lesson-list-tips{
+      ta: center;
+      m: 1rem;
+  }
+  .readbook-module-lesson-title{
+      w: 4.2rem;
+      h: 1.32rem;
+      background-size: 100% 100%;
+      &:before{
+          left: -1rem;
+      }
+  }
+  @for $i from 1 through 7 {
+      .readbook-module-lesson-title$i {
+          background-image: url('~images/readbook/lesson-title$(i).png')
+      }
+  }
+  .teacher-card{
+        w: 3rem;
+        min-height: 5.9rem;
+        float: left;
+        m: 0 .16rem;
+
+        .teacher-card-photo{
+            w: 3rem;
+            h: 2.96rem;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .teacher-card-name{
+            fz: .48rem;
+            fw: 800;
+            mt: .4rem;
+            lh: .6rem;
+        }
+        .teacher-card-info{
+            fw: 300;
+            fz: .48rem;
+            mt: .3rem
+        }
+    }
+    .readbook-banner{
+        bg: linear-gradient( 180deg, #5DB5DE 177vw, #A4E2EE);
+        h: 230vw;
+        .banner{
+            background: url("~images/readbook/banner.png") no-repeat;
+            w: 100vw;
+            h: 177.7333334vw;
+            background-size: 100% auto
+        }
+        .leaf{
+            w: 100vw;
+            h: 57.6vw;
+            background: url("~images/readbook/leaf.png") no-repeat;
+            background-size: 100% auto;
+            position: absolute;
+            top: 140vw
+        }
+    }
+    .readbook-btn{
+        h: 1.3rem;
+        min-width: 3.5rem;
+        position: relative;
+        p{
+            fz: .6rem;
+            fw: 600;
+            c: #fff;
+            lh: 1.3rem;
+            ta: center
+        }
+        &:after{
+            content: '';
+            w: 100%;
+            h: 100%;
+            position: absolute;
+            left: 0;
+            top: 0
+        }
+    }
+    .readbook-btn-circle{
+        bdrs: 5rem;
+        &:after{
+             bdrs: 5rem;
+        }
+    }
+    .readbook-btn-round{
+        bdrs: 6px;
+        &:after{
+             bdrs: 6px;
+        }
+    }
+    .readbook-btn-blue{
+        background: linear-gradient(0deg,rgba(81,167,203,1),rgba(164,226,238,1));
+        &:after{
+            box-shadow: inset 0px -1px 0px 0px rgba(81, 167, 203, 0.35)
+        }
+        
+    }
+    .readbook-btn-blue-active:active{
+        bg: linear-gradient( 0deg, #0a347f , #4899ed 100%)
+    }
+    .readbook-btn-no-active:active{
+        background: linear-gradient(0deg,rgba(81,167,203,1),rgba(164,226,238,1));
+    }
+    .readbook-btn-orange{
+        bg: linear-gradient( 0deg, rgb(222,152,133) 0%, rgb(253,217,196) 100%)
+    }
+    .readbook-btn-shadow-blue{
+        box-shadow: 0px 4px 9px 0px rgba(85, 179, 222, 0.4);
+    }
+    .readbook-btn-shadow-orange{
+        box-shadow: 0px 4px 5px 0px rgba(255, 142, 79, 0.4);
+    }
+}
+@keyframes disk-move {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+.audio-player{
+    .audio-player-left{
+        fl: left;
+        h: 5rem;
+        .audio-player-machine{
+            position: relative;
+            .audio-player-rod{
+                bg: url("~images/readbook/audio-rod.png") no-repeat;
+                w: .9rem;
+                h: 3.02rem;
+                background-size: 100% auto;
+                position: absolute;
+                left: 2.9rem;
+                transform: rotate(-22deg);
+                transform-origin: top;
+                transition: all .4s;
+            }
+            .audio-player-disk{
+                w: 4.42rem;
+                h: 4.42rem;
+                mt: .8rem;
+                position: absolute;
+                .audio-player-bg{
+                    bg: url("~images/readbook/audio-disk.png") no-repeat;
+                    background-size: 100% auto;
+                    transition: all .4s;
+                    animation: disk-move 4s linear infinite;
+                    animation-play-state: paused;
+                    w: 100%;
+                    h: 100%;
+                }
+                .audio-player-cover{
+                    w: 1.68rem;
+                    h: 1.68rem;
+                    position: absolute;
+                    left: 1.21rem;
+                    top: 1.21rem;
+                    background-size: 100% 100%;
+                    left: 50%;
+                    top: 50%;
+                    ml: -.84rem;
+                    mt: -.84rem
+                }
+            }
+        }
+        .audio-player-play{
+            .audio-player-rod{
+                transform: rotate(0deg);
+                /* transition: all .4s; */
+            }
+            .audio-player-disk .audio-player-bg{
+                animation-play-state: running
+            }
+        }
+    }
+    .audio-player-right{
+        pt: .7rem;
+        pb: .4rem;
+        ml: 5rem;
+        min-height: 5rem;
+        h2{
+            fz: .64rem;
+        }
+        p{
+            fz: .48rem;
+            m: .44rem 0;
+        }
+        .audio-player-btn{
+            div{
+                d: inline-block;
+                &:nth-child(1){
+                    mr: .4rem
+                }
+            }
+            .audio-btn-icon{
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                d: inline-block;
+                ml: .2rem;
+                vertical-align: middle
+            }
+            .audio-btn-play-icon{
+                w: .52rem;
+                h: .58rem;
+                background-image: url('~images/readbook/play.png');
+            }
+            .audio-btn-pause-icon{
+                w: .48rem;
+                h: .62rem;
+                background-image: url('~images/readbook/pause.png');
+            }
+        }
+    }
+    .readbook-btn{
+        h: 1.3rem;
+        min-width: 3.5rem;
+        position: relative;
+        p{
+            fz: .6rem;
+            fw: 600;
+            c: #fff;
+            lh: 1.3rem;
+            ta: center;
+            m: auto
+        }
+        &:after{
+            content: '';
+            w: 100%;
+            h: 100%;
+            position: absolute;
+            left: 0;
+            top: 0
+        }
+    }
+    .readbook-btn-circle{
+        bdrs: 5rem;
+        &:after{
+             bdrs: 5rem;
+        }
+    }
+    .readbook-btn-round{
+        bdrs: 6px;
+        &:after{
+             bdrs: 6px;
+        }
+    }
+    .readbook-btn-blue{
+        background: linear-gradient(0deg,rgba(81,167,203,1),rgba(164,226,238,1));
+        &:after{
+            box-shadow: inset 0px -1px 0px 0px rgba(81, 167, 203, 0.35)
+        }
+        
+    }
+    .readbook-btn-blue-active:active{
+        bg: linear-gradient( 0deg, #0a347f , #4899ed 100%)
+    }
+    .readbook-btn-no-active:active{
+        background: linear-gradient(0deg,rgba(81,167,203,1),rgba(164,226,238,1));
+    }
+    .readbook-btn-orange{
+        bg: linear-gradient( 0deg, rgb(222,152,133) 0%, rgb(253,217,196) 100%)
+    }
+    .readbook-btn-shadow-blue{
+        box-shadow: 0px 4px 9px 0px rgba(85, 179, 222, 0.4);
+    }
+    .readbook-btn-shadow-orange{
+        box-shadow: 0px 4px 5px 0px rgba(255, 142, 79, 0.4);
+    }
+    
+}
+.readbook-tab{
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+    bg: #fdd9c4;
+    p: .6rem 0;
+    ul{
+        m: 0 .26rem
+    }
+    li{
+        d: inline-block;
+        w: 33%;
+        p: .26rem;
+        box-sizing: border-box
+        
+    }
+
+}
+.lesson-card{
+    p: .5rem;
+    .lesson-card-left{
+        fl: left
+    }
+    .lesson-card-img{
+        w: 3.6rem;
+        h: 3.6rem;
+        background-size: 100% 100%
+    }
+    .lesson-card-right{
+        ml: 4.1rem;
+        position: relative;
+        min-height: 3.6rem;
+    }
+    h2{
+        fz: .64rem
+    }
+    .lesson-card-price{
+        position: absolute;
+        bottom: 0;
+        .special{
+            fz: .48rem;
+            fw: 300;
+            strong{
+                c: #FF6339;
+                ml: .48rem;
+                fz: .6rem;
+            }
+        }
+        .normal{
+            fz: .48rem;
+            c: #CBCBCB;
+            text-decoration: line-through;
+        }
+    }
+    .lesson-card-button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

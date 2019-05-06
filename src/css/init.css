@@ -1,0 +1,56 @@
+***************************************************************************** CSS Reset
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+audio,canvas{display:inline-block;*display:inline;*zoom:1;}
+i{font-weight: normal}
+input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}
+fieldset,img{border:0;}
+iframe{display:block;}
+abbr,acronym{border:0;font-variant:normal;}
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+q:before,q:after{content:'';}
+a:hover{text-decoration:none;}
+ins,a{text-decoration:none;}
+/****************************************************************************** Forms */
+select,input,button,textarea{ font:100% arial,helvetica,clean,sans-serif;}
+/****************************************************************************** HTML5 */
+header,footer,nav,article,aside{display:block;}
+
+@media screen and (min-width: 800px)and (max-width: 900px){
+html {
+    font-size: 50px;
+}}
+@media screen and (min-width: 700px)and (max-width: 799px){
+html {
+    font-size: 43px;
+}}
+@media screen and (min-width: 600px)and (max-width: 699px){
+html {
+    font-size: 38px;
+}}
+@media screen and (min-width: 500px)and (max-width: 599px){
+html {
+    font-size: 32px;
+}}
+@media screen and (min-width: 401px)and (max-width: 499px){
+html {
+    font-size: 27.5px;
+}}
+@media screen and (min-width: 374px)and (max-width: 400px){
+html {
+    font-size: 25px;
+}}
+@media screen and (min-width: 360px)and (max-width: 373px){
+html {
+    font-size: 24px;
+}}
+@media screen and (min-width: 320px)and (max-width: 359px){
+html {
+    font-size: 21.333333333333332px;
+}}
