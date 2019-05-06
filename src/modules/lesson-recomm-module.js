@@ -20,7 +20,7 @@ class LessonRecomm extends Component{
         }
     }
     componentDidMount () {
-        const swiper = new Swiper ('.swiper-container', swiperOpt)
+        const swiper = new Swiper ('.swiper-container-lesson-recomm', swiperOpt)
         this.setState({ swiper: swiper})
     }
     render () {
@@ -35,7 +35,7 @@ class LessonRecomm extends Component{
                 <div className="readbook-title3 readbook-module-title">
                 </div>
                 <div className="readbook-lesson-recomm-list">
-                <div className="swiper-container">
+                <div className="swiper-container swiper-container-lesson-recomm">
 						<div className="swiper-wrapper">
 							{ listDom }
 						</div>

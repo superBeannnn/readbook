@@ -563,4 +563,55 @@
         bottom: 0;
         right: 0;
     }
+    
+}
+.package-card{
+    ta: center;
+    p: .4rem;
+    pt: 1.2rem;
+    overflow: inherit !important;
+    w: calc((100% - .6rem) / 2);
+    h: 8.3rem;
+    fl: left;
+    mt: .2rem ;
+    box-sizing: border-box;
+    position: relative;
+    ml: .2rem;
+    &:before{
+        content: '';
+        position: absolute;
+        bg: url("~images/readbook/bow.png") no-repeat;
+        background-size: 100% 100%;
+        w: 2.18rem;
+        h: 2.08rem;
+        right: -.23rem;
+        top: -.1rem
+    }
+    h2{
+        fz: .64rem;
+        mb: .3rem;
+        
+    }
+    .package-card-info{
+        fz: .4rem;
+        fw: 300;
+        mb: .72rem;
+    }
+    .special{
+        fz: .48rem;
+        strong{
+            c: #FF6339;
+            ml: .48rem;
+            fz: .6rem;
+        }
+    }
+    .normal{
+        fz: .48rem;
+        c: #CBCBCB;
+        text-decoration: line-through;
+    }
+    .package-card-button{
+        w: 3.5rem;
+        m: .8rem auto 0
+    }
 }
