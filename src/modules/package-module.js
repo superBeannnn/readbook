@@ -48,7 +48,6 @@ class PackageModule extends Component {
             },
             pagination: {
                 el: '.swiper-pagination',
-                dynamicBullets: true,
                 bulletClass : 'readbook-bullet',
                 clickable: true
             }
@@ -64,8 +63,8 @@ class PackageModule extends Component {
                 <div className="swiper-container swiper-container-package">
 					<div className="swiper-wrapper">
                         { <SwiperDom list={ list }></SwiperDom>}
-                        <div className="swiper-pagination" slot="pagination"></div>
                     </div>
+                    <div className='swiper-pagination swiper-pagination-lesson-recomm'></div>
                 </div>
             </div>
         )

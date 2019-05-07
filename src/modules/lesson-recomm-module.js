@@ -7,7 +7,6 @@ const swiperOpt = {
     spaceBetween: 10,
     pagination: {
         el: '.swiper-pagination',
-        dynamicBullets: true,
         bulletClass : 'readbook-bullet',
         clickable: true
     }
@@ -36,11 +35,11 @@ class LessonRecomm extends Component{
                 </div>
                 <div className="readbook-lesson-recomm-list">
                 <div className="swiper-container swiper-container-lesson-recomm">
-						<div className="swiper-wrapper">
-							{ listDom }
-						</div>
-						<div className='swiper-pagination'></div>
-					</div>
+                    <div className="swiper-wrapper">
+                        { listDom }
+                    </div>
+                    <div className='swiper-pagination swiper-pagination-lesson-recomm'></div>
+                </div>
                     
                 </div>
                 
