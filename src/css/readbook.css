@@ -187,10 +187,13 @@
       transform: scale(1);
       transition: all .2s;
   }
-  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{
+  .swiper-pagination-bullets .swiper-pagination-bullet-active{
       bg: #51A7CB;
       transform: scale(1);
       
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+      bottom: 0
   }
   .readbook-teacher-text{
       c: #FF8740;
@@ -212,6 +215,7 @@
       bdrs: 2rem;
       m: auto;
       mt: 1rem;
+      fz: .6rem;
       &:before, &:after{
           content: '-------------------------------';
           position: absolute;
@@ -235,6 +239,7 @@
   .readbook-lesson-list-tips{
       ta: center;
       m: 1rem;
+      fz: .6rem;
   }
   .readbook-module-lesson-title{
       w: 4.2rem;

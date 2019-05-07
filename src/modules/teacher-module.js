@@ -6,7 +6,7 @@ function TeacherList (props){
         return <TeacherCard key={ index } data={ item }/>
     })
     return (
-        <div>
+        <div className="readbook-teacher-list">
             { list }
         </div>
     )

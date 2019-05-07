@@ -3,12 +3,15 @@ import ReadbookBtn from './readbook-btn'
 function clickBtn () {
     console.log(1)
 }
+function PackageCardInfo( text ){
+    
+    return { __html: text }
+}
 function PackageCard ({ data }) {
     return (
         <div className="package-card readbook-card-module">
             <h2> { data.title }</h2>
-            <p className="package-card-info">
-                { data.info }
+            <p className="package-card-info" dangerouslySetInnerHTML={ PackageCardInfo( data.info ) }>
             </p>
             <p className="special"> 
                 限时 
@@ -19,8 +22,9 @@ function PackageCard ({ data }) {
                 <ReadbookBtn 
                     btn-color="blue" 
                     btn-style="circle"
-                    click={ clickBtn }>
-                    抢优惠
+                    click={ clickBtn }
+                    slot={()=>(<p> 抢优惠 </p>)}>
+                    
                 </ReadbookBtn>
             </div>
         </div>
