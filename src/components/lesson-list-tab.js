@@ -7,12 +7,12 @@ function LessonListTab ({
     index = 0,
     tabChange
 }){
-    const tabList = list.map(item => {
+    const tabList = list.map((item, i) => {
         return (
             <li key={ item.id }>
                 <TabItem 
                     slot={()=>(<p>{ item.title }</p>)}
-                    click={ tabChange.bind(this, item.id) }
+                    click={ tabChange.bind(this, item.id, i) }
                     btnColor={ item.id === index ? 'orange' : 'blue'}
                     shadowColor='orange'
                 >
